@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/writesms2"
+	android:paddingBottom="12dp"
+    tools:context=".NewsmsActivity" >
+
+    <Button
+        android:id="@+id/button_addname"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/text_number"
+        android:layout_below="@+id/addcontact"
+        android:layout_marginTop="62dp"
+        android:text=" "
+        android:background="#00000000" />
+
+    <EditText
+        android:id="@+id/smsinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/addcontact"
+        android:background="#00000000"
+        android:ems="10"
+        android:hint="请在此键入信息"
+        android:textColor="#FFFFFF"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+    <ImageView
+        android:id="@+id/addcontact"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/text_number"
+        android:layout_marginRight="42dp"
+        android:paddingBottom="3dp"
+  />
+
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/button_gotosms" />
+
+    <EditText
+        android:id="@+id/text_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="93dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="9dp"
+       
+        android:layout_toLeftOf="@+id/addcontact"
+        android:background="@drawable/sms_bg"
+        android:ems="10"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:text=" TextView"
+        android:textColor="#000000" />
+	
+</RelativeLayout>

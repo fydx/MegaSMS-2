@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  android:background="@drawable/background_main"
+  
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    tools:context=".ContactActivity" >
+       <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+      
+        android:paddingTop="10dp"
+        android:src="@drawable/background_shell"
+         />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignTop="@+id/imageView1"
+      android:src="@drawable/topbar" 
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+      />
+    
+    <ListView
+        android:id="@+id/listView_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/commit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageView4"
+        android:dividerHeight="0px"
+        android:paddingBottom="15dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+     >
+
+    </ListView>
+
+   <Button
+        android:id="@+id/commit"
+        android:layout_width="130dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_plain"
+        android:text="添加" 
+        android:textColor="#FFFFFF"/>
+
+   <ImageView
+       android:id="@+id/imageView4"
+       android:layout_width="20dp"
+       android:layout_height="20dp"
+       android:layout_alignBottom="@+id/imageView3"
+       android:layout_alignLeft="@+id/commit"
+               android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+       android:src="@drawable/pop" />
+
+   <ImageView
+       android:id="@+id/imageView3"
+       android:layout_width="80dp"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/imageView1"
+       android:layout_marginTop="15dp"
+       android:layout_toRightOf="@+id/imageView4"
+       android:src="@drawable/megasms" />
+
+</RelativeLayout>
