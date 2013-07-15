@@ -1,5 +1,7 @@
-MegaSMS
+MegaSMS--纪念版
 ============
+
+2013 华中科技大学 Unique Hackday 纪念
 
 #主要功能
 
